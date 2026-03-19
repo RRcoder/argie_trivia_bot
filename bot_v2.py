@@ -1,4 +1,5 @@
 import logging
+import os
 import random
 import unicodedata
 
@@ -12,7 +13,6 @@ from telegram.ext import (
 )
 
 from quiz_data import QUIZ_QUESTIONS
-
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -164,7 +164,7 @@ async def show_final_ranking(update, context):
 
 def main():
 
-    application = ApplicationBuilder().token("YOUR_BOT_TOKEN").build()
+    application = ApplicationBuilder().token(os.getenv("TELEGRAM_BOT_TOKEN")).build()
 
     application.add_handler(CommandHandler("quiz", quiz))
 

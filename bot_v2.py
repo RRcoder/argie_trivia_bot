@@ -31,10 +31,13 @@ def normalize(text):
 
 async def quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
+    cat="Yayi"
+    questions=[q for q in QUIZ_QUESTIONS if q.get('category')==cat] 
+
     context.chat_data["game"] = {
         "active": True,
         "current_question_index": 0,
-        "questions": random.sample(QUIZ_QUESTIONS, QUESTIONS_PER_QUIZ),
+        "questions": random.sample(questions, QUESTIONS_PER_QUIZ),
         "scores": {},
         "answered": False,
         "current_answer": None

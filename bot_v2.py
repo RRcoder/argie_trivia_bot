@@ -3,6 +3,7 @@ import os
 import random
 import unicodedata
 
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import (
     ApplicationBuilder,
@@ -13,6 +14,8 @@ from telegram.ext import (
 )
 
 from quiz_data import QUIZ_QUESTIONS
+
+load_dotenv()
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",

@@ -56,7 +56,7 @@ async def send_question(update, context):
     index = game["current_question_index"]
     question_data = game["questions"][index]
 
-    game["current_answer"] = normalize(question_data["answers"][0])
+    game["current_answer"] = normalize(question_data["options"][question_data["correct_option_index"]])
     game["answered"] = False
 
     question_text = (

@@ -46,4 +46,76 @@ QUIZ_QUESTIONS = [
 "correct_option_index": 5,
     "category": "Yayi"
 },
+
+
+
+{
+"question": "Quien es el Salmon?",
+"options": ["Fito","Calamaro","Charly","Mollo"],
+"correct_option_index": 1,
+    "category": "musica_argentina"
+},
+
+{
+"question": "En que año fue el ultimo recital del Sumo con Luca Prodan?",
+"options": ["1990","1992","1989","1987", "1995"],
+"correct_option_index": 3,
+"category": "musica_argentina"
+},
+
+{
+"question": "Quien fue el cantante de la banda Virus?",
+"options": ["Ricardo Mollo","Gustavo Cerati","Federico Moura","Ricardo Iorio"],
+"correct_option_index": 2,
+    "category": "musica_argentina"
+},
+
+{
+        "question": "Nombre del tema: Yo no sé bien que es, Vos dirás son intuiciones Verdaderas alertas, voy a confiar en mí Lo tengo que saber pero es muy difícil ver, Algo controla mi ser?",
+"options": ["Intuiciones","Funk","Mi vida","Influencia"],
+"correct_option_index": 3,
+    "category": "musica_argentina"
+},
+
+{
+"question": "Con quien colaboro Charly garcia en el tema Inconsciente colectivo?",
+"options": ["Fabiana Cantilo","Mercedes Sosa","Patricia Sosa","Gustavo Cerati"],
+"correct_option_index": 1,
+    "category": "musica_argentina"
+},
+
+{
+        "question": "Nombre del tema:Vengo agotado de cantar / En la niebla / Por la autopista junto al mar / Hay gitanos / Van celebrando un ritual / Ignorado Mis propios dioses ya no están / Espejismos?",
+"options": ["Paganos","Imagenes paganas","Espejismos","Remolinos", "Luna de miel", "Encuentro en el rio"],
+"correct_option_index": 1,
+    "category": "musica_argentina"
+},
+
+{
+"question": "Tercer disco de Soda Stereo?",
+"options": ["Cancion animal","Soda Stereo","nada personal","doble vida", "signos"],
+"correct_option_index": 4,
+    "category": "musica_argentina"
+},
+
+{
+"question": "Artista mas escuchado en argentina en el 2025 segun spotify?",
+"options": ["bad bunny","duki","shakira","Maria becerra"],
+"correct_option_index": 0,
+    "category": "musica_argentina"
+},
+
+{
+"question": "Banda argentina originaria de mendoza que tiene un tema que habla de bolivianos?",
+"options": ["Soda","Miranda","Los piojos","Miranda"],
+"correct_option_index": 3,
+    "category": "musica_argentina"
+},
+
+
+
 ]
+
+
+
+

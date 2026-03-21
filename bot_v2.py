@@ -34,8 +34,30 @@ def normalize(text):
 
 async def quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
-    cat="Yayi"
-    questions=[q for q in QUIZ_QUESTIONS if q.get('category')==cat] 
+    available_categories = list(set(q.get('category') for q in QUIZ_QUESTIONS if q.get('category')))
+    cat = "Yayi"
+
+    if context.args:
+        cat_input = " ".join(context.args).strip()
+        cat_normalized = normalize(cat_input)
+        cat_matched = next((c for c in available_categories if normalize(c) == cat_normalized), None)
+
+        if cat_matched:
+            cat = cat_matched
+        else:
+            await update.message.reply_text(
+                f"❌ Categoría no encontrada: '{cat_input}'\n\n"
+                f"Categorías disponibles:\n" + "\n".join(f"  • {c}" for c in sorted(available_categories))
+            )
+            return
+
+    questions = [q for q in QUIZ_QUESTIONS if q.get('category') == cat]
+
+    if len(questions) < QUESTIONS_PER_QUIZ:
+        await update.message.reply_text(
+            f"⚠️ No hay suficientes preguntas en la categoría '{cat}' ({len(questions)} disponibles, se necesitan {QUESTIONS_PER_QUIZ})."
+        )
+        return
 
     context.chat_data["game"] = {
         "active": True,
@@ -46,6 +68,7 @@ async def quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "current_answer": None
     }
 
+    await update.effective_chat.send_message(f"🎮 ¡Quiz iniciado! Categoría: *{cat}*", parse_mode="Markdown")
     await send_question(update, context)
 
 

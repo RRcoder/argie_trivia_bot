@@ -1,22 +1,5 @@
 QUIZ_QUESTIONS = [
 {
-"question": "De que color es el caballo de San Martin?",
-"options": ["negro","marron", "blanco","gris"],
-"correct_option_index": 2,
-    "category": "biologia"
-},
-{
-"question": "En que año nació Borges?",
-"options": ["1925","1914", "1937","1899"],
-"correct_option_index": 3,
-    "category": "literatura"
-},
-{
-"question": "Que tipo de ciencia es la economía?",
-"options": ["exacta","social", "natural"],
-"correct_option_index": 1, 
-},
-{
 "question": "De que cripto Yayi es fan?",
 "options": ["Ether","Bitcoin", "Solana","Luna", "USDT"],
 "correct_option_index": 1, 
@@ -38,14 +21,24 @@ QUIZ_QUESTIONS = [
 "question": "Que canción le encanta a Yayi y la usaba para despedirse en los vivos de twitch?",
 "options": ["Chiquitita","No se habla de Bruno","waka waka", "Enter sandman"],
 "correct_option_index": 1,
-    "category": "Yayi"
+"category": "Yayi"
 },
 {
 "question": "Que dia del mes cumple años Yayi?",
 "options": ["11","13","15","17", "19", "26", "28"],
 "correct_option_index": 5,
-    "category": "Yayi"
+"category": "Yayi"
 },
+
+{
+"question": "En un stream Yayi menciono un libro de Adam Smith que le gusto mucho mas que La riqueza de las naciones, cual fue?",
+"options": ["La teoria de los sentimientos morales","","",""],
+"correct_option_index": 0,
+"category": "Yayi"
+},
+
+
+
 
 
 
@@ -112,10 +105,90 @@ QUIZ_QUESTIONS = [
     "category": "musica_argentina"
 },
 
+{
+"question": "¿Cuántos son los pares craneales?",
+"options": ["12","","",""],
+"correct_option_index":0 ,
+"category": "cuerpo_humano"
+},
+{
+"question": "¿Cuántos huesos tiene el cuerpo humano",
+"options": ["206","","",""],
+"correct_option_index": 0,
+"category": "cuerpo_humano"
+},
+{
+"question": "?¿Cuál es el órgano más extenso del cuerpo humano?",
+"options": ["piel", "","",""],
+"correct_option_index": 0,
+"category": "cuerpo_humano"
+},
+{
+"question": "¿Dónde se ubica el musculo sóleo??",
+"options": ["pantorrilla","","",""],
+"correct_option_index": 0,
+"category": "cuerpo_humano"
+},
+{
+"question": "¿Cómo se llaman las células que se encuentran en la retina y permiten la visión??",
+"options": ["bastones","","",""],
+"correct_option_index": 0,
+"category": "cuerpo_humano"
+},
+{
+"question": "¿Qué células sanguíneas están implicadas principalmente en la defensa del cuerpo ante un proceso infeccioso??",
+"options": ["leucocitos","","",""],
+"correct_option_index":0 ,
+"category": "cuerpo_humano"
+},
+{
+"question": "¿Cuál es la arteria más grande del cuerpo??",
+"options": ["aorta","","",""],
+"correct_option_index": 0,
+"category": "cuerpo_humano"
+},
+{
+"question": "¿Qué hormona secreta principalmente la glándula pituitaria??",
+"options": ["la hormona del crecimiento","","",""],
+"correct_option_index": 0,
+"category": "cuerpo_humano"
+},
+{
+"question": "¿Qué vitamina participa en la coagulación de la sangre??",
+"options": ["vitamina K","","",""],
+"correct_option_index":0 ,
+"category": "cuerpo_humano"
+},
+{
+"question": "Cual es el órgano glandular mixto: exocrino, porque secreta enzimas digestivas al intestino y endocrino porque produce insulina y glucagón?",
+"options": ["pancreas","","",""],
+"correct_option_index": 0,
+"category": "cuerpo_humano"
+},
+
 
 
 ]
 
+#{
+#"question": "?",
+#"options": ["","","",""],
+#"correct_option_index": ,
+    #"category": ""
+#},
 
 
+
+#{
+#"question": "En que año nació Borges?",
+#"options": ["1925","1914", "1937","1899"],
+#"correct_option_index": 3,
+#"category": "literatura"
+#},
+#{
+#"question": "Que tipo de ciencia es la economía?",
+#"options": ["exacta","social", "natural"],
+#"correct_option_index": 1, 
+#"category": "economia"
+#},
 

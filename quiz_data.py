@@ -37,6 +37,12 @@ QUIZ_QUESTIONS = [
 "category": "Yayi"
 },
 
+#{
+#"question": "?",
+#"options": ["","","",""],
+#"correct_option_index": ,
+    #"category": ""
+#},
 
 
 
@@ -44,7 +50,7 @@ QUIZ_QUESTIONS = [
 
 {
 "question": "Quien es el Salmon?",
-"options": ["Fito","Calamaro","Charly","Mollo"],
+"options": ["Fito","Andres Calamaro","Charly Garcia","Ricardo Mollo"],
 "correct_option_index": 1,
     "category": "musica_argentina"
 },
@@ -100,8 +106,8 @@ QUIZ_QUESTIONS = [
 
 {
 "question": "Banda argentina originaria de mendoza que tiene un tema que habla de bolivianos?",
-"options": ["Soda","Miranda","Los piojos","Miranda"],
-"correct_option_index": 3,
+"options": ["Soda","Miranda","Los piojos","Miranda", "Los enanitos verdes"],
+"correct_option_index": 4,
     "category": "musica_argentina"
 },
 

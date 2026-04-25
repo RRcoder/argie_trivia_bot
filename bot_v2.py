@@ -190,6 +190,9 @@ async def show_final_ranking(update, context):
 
 def main():
 
+    webhook_url = os.getenv("WEBHOOK_URL")
+    webhook_secret = os.getenv("WEBHOOK_SECRET")
+
     application = ApplicationBuilder().token(os.getenv("TELEGRAM_BOT_TOKEN")).build()
 
     application.add_handler(CommandHandler("quiz", quiz))
@@ -198,7 +201,17 @@ def main():
         MessageHandler(filters.TEXT & ~filters.COMMAND, handle_guess)
     )
 
-    application.run_polling()
+    if webhook_url:
+        application.run_webhook(
+            listen="0.0.0.0",
+            port=8443,
+            url_path="webhook",
+            webhook_url=webhook_url,
+            secret_token=webhook_secret,
+        )
+    else:
+        logging.warning("WEBHOOK_URL not set, falling back to polling")
+        application.run_polling()
 
 
 if __name__ == "__main__":
